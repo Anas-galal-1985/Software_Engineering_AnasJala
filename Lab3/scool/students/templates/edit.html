@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if total > 250 %}
+      <p>Ex.</p>
+      {% elif total > 200 %}
+      <p>Good</p>
+      {% elif total > 150 %}
+      <p>Average</p>
+      {% else %}
+      <p>Below Average</p>
+    {% endif %}
+
+    <ul>
+        {% for s,m in marks.items %}
+        <li>{{s}} : {{m}}</li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
